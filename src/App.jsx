@@ -425,17 +425,17 @@ export default function UseCaseEvaluator() {
             </div>
 
             <h1 style={{
-              fontSize: "clamp(26px, 5vw, 40px)", fontWeight: 700, lineHeight: 1.25,
+              fontSize: "clamp(28px, 5.5vw, 48px)", fontWeight: 700, lineHeight: 1.15,
               marginBottom: 32, color: "#fff", maxWidth: 600, margin: "0 auto 32px"
             }}>
-              What's the fastest way to solve your workflow challenges with AI — without lowering quality?
+              The AI playbook for every marketing workflow
             </h1>
 
             <p style={{
-              fontSize: 16, color: "#B8A9D4", maxWidth: 480,
+              fontSize: 16, color: "#B8A9D4", maxWidth: 520,
               margin: "0 auto 28px", lineHeight: 1.7
             }}>
-              Tell us your marketing challenge. We'll do the rest.
+              Select your challenge. Get tool recommendations, automation strategies, and a clear human-vs-AI verdict.
             </p>
 
             <div style={{

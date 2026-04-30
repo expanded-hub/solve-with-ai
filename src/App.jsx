@@ -373,6 +373,14 @@ export default function UseCaseEvaluator() {
     }
   }, [step]);
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://tally.so/widgets/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => document.body.removeChild(script);
+  }, []);
+
   const problem = selectedFunction && selectedProblem !== null
     ? DATA[selectedFunction].problems[selectedProblem]
     : null;
@@ -616,28 +624,19 @@ export default function UseCaseEvaluator() {
             {/* CTA */}
             <div style={{
               background: "#1E1145", border: "1px solid rgba(255,255,255,0.1)",
-              borderRadius: 16, padding: 32, textAlign: "center"
+              borderRadius: 16, padding: "32px 24px", overflow: "hidden"
             }}>
-              <h3 style={{ fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 8 }}>
-                Want more like this?
-              </h3>
-              <p style={{ fontSize: 14, color: "#9d97b0", marginBottom: 24, lineHeight: 1.6 }}>
-                I send one email a week on AI workflows for marketing leaders. Real builds. No fluff.
-              </p>
               <iframe
-                src="https://tally.so/embed/Pd5gEV?alignLeft=1&hideTitle=1&transparentBackground=1"
+                src="https://tally.so/embed/Pd5gEV?alignLeft=1&hideTitle=0&transparentBackground=1&dynamicHeight=1"
                 width="100%"
-                height="200"
+                height="500"
                 frameBorder="0"
                 marginHeight="0"
                 marginWidth="0"
                 title="Newsletter signup"
-                style={{ border: "none", borderRadius: 8 }}
+                style={{ border: "none" }}
+                loading="lazy"
               ></iframe>
-              <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-                <p style={{ fontSize: 13, color: "#7a748e" }}>Katie McPhee · Founder, Expanded Future</p>
-                <p style={{ fontSize: 12, color: "#5a5470" }}>AI enablement for marketing teams</p>
-              </div>
             </div>
 
             {/* Navigation */}

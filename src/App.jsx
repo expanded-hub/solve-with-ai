@@ -426,28 +426,34 @@ export default function UseCaseEvaluator() {
 
             <h1 style={{
               fontSize: "clamp(28px, 5.5vw, 48px)", fontWeight: 700, lineHeight: 1.15,
-              marginBottom: 32, color: "#fff", maxWidth: 600, margin: "0 auto 32px"
+              marginBottom: 20, color: "#fff", maxWidth: 650, margin: "0 auto 20px"
             }}>
-              The AI playbook for every marketing workflow
+              The Marketing Use Case Evaluator
             </h1>
 
             <p style={{
-              fontSize: 16, color: "#B8A9D4", maxWidth: 520,
+              fontSize: 17, color: "#B8A9D4", maxWidth: 560,
               margin: "0 auto 28px", lineHeight: 1.7
             }}>
-              Select your challenge. Get tool recommendations, automation strategies, and a clear human-vs-AI verdict.
+              110 marketing use cases. Pick your bottleneck. Select your path: AI-assisted or fully agentic.
             </p>
 
             <div style={{
-              display: "flex", flexDirection: "column", gap: 8,
-              maxWidth: 480, margin: "0 auto 44px"
+              display: "flex", flexDirection: "column", gap: 10,
+              maxWidth: 520, margin: "0 auto 44px",
+              textAlign: "left"
             }}>
-              {["110 proven AI solutions across 11 marketing functions", "Two paths for every challenge: AI-assisted or fully agentic", "The exact tools leading marketing teams are using right now"].map((item, i) => (
+              {[
+                "Select your challenge. Get tool recommendations + tips on retaining human oversight",
+                "110 proven AI solutions across 11 marketing functions",
+                "Two paths for every challenge: AI-assisted or fully agentic",
+                "The exact tools leading marketing teams are using right now"
+              ].map((item, i) => (
                 <div key={i} style={{
-                  display: "flex", alignItems: "center", gap: 12,
-                  fontSize: 15, color: "#E8E0F0", lineHeight: 1.5
+                  display: "flex", alignItems: "flex-start", gap: 12,
+                  fontSize: 15, color: "#E8E0F0", lineHeight: 1.6
                 }}>
-                  <span style={{ color: "#7B61FF", fontSize: 16, flexShrink: 0 }}>→</span>
+                  <span style={{ color: "#7B61FF", fontSize: 16, flexShrink: 0, marginTop: 2 }}>→</span>
                   <span>{item}</span>
                 </div>
               ))}
@@ -613,29 +619,24 @@ export default function UseCaseEvaluator() {
               borderRadius: 16, padding: 32, textAlign: "center"
             }}>
               <h3 style={{ fontSize: 20, fontWeight: 700, color: "#fff", marginBottom: 8 }}>
-                Want to build these capabilities in your team?
+                Want more like this?
               </h3>
               <p style={{ fontSize: 14, color: "#9d97b0", marginBottom: 24, lineHeight: 1.6 }}>
-                I help marketing leaders build AI-ready teams — through diagnostics, workshops, and hands-on training programmes.
+                I send one email a week on AI workflows for marketing leaders. Real builds. No fluff.
               </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: 12, alignItems: "center" }}>
-                <a href="https://expandedfuture.com/services" target="_blank" rel="noopener noreferrer" style={{
-                  background: "linear-gradient(135deg, #7B61FF 0%, #6349c4 100%)",
-                  color: "#fff", textDecoration: "none", padding: "14px 32px", borderRadius: 50,
-                  fontSize: 15, fontWeight: 600, display: "inline-block",
-                  boxShadow: "0 4px 24px rgba(123, 97, 255, 0.3)"
-                }}>
-                  See how I can help →
-                </a>
-                <a href="https://expandedfuture.com" target="_blank" rel="noopener noreferrer" style={{
-                  color: "#9d97b0", textDecoration: "none", fontSize: 13
-                }}>
-                  expandedfuture.com
-                </a>
-              </div>
-              <div style={{ marginTop: 24, paddingTop: 20, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+              <iframe
+                src="https://tally.so/embed/Pd5gEV?alignLeft=1&hideTitle=1&transparentBackground=1"
+                width="100%"
+                height="200"
+                frameBorder="0"
+                marginHeight="0"
+                marginWidth="0"
+                title="Newsletter signup"
+                style={{ border: "none", borderRadius: 8 }}
+              ></iframe>
+              <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,0.06)" }}>
                 <p style={{ fontSize: 13, color: "#7a748e" }}>Katie McPhee · Founder, Expanded Future</p>
-                <p style={{ fontSize: 12, color: "#5a5470" }}>AI leadership consultancy for marketing teams</p>
+                <p style={{ fontSize: 12, color: "#5a5470" }}>AI enablement for marketing teams</p>
               </div>
             </div>
 
